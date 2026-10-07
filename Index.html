@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portal Educativo del Colegio</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f7fb;
+            color: #222;
+        }
+
+        header {
+            background: #123b63;
+            color: white;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffd54a;
+        }
+
+        .hero {
+            background: linear-gradient(
+                rgba(18,59,99,0.85),
+                rgba(18,59,99,0.85)
+            ),
+            url("https://images.unsplash.com/photo-1503676260728-1c00da094a0b")
+            center/cover;
+
+            min-height: 430px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 30px;
+        }
+
+        .hero h1 {
+            font-size: 45px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            background: #ffd54a;
+            color: #123b63;
+            padding: 14px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .section {
+            padding: 50px 8%;
+            text-align: center;
+        }
+
+        .section h2 {
+            color: #123b63;
+            margin-bottom: 30px;
+            font-size: 32px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .card .icon {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            color: #123b63;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #123b63;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 700px) {
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+                padding: 20px;
+            }
+
+            nav a {
+                margin: 5px;
+                font-size: 14px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        🏫 MI COLEGIO
+    </div>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#colegio">Colegio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+</header>
+
+
+<section class="hero" id="inicio">
+
+    <div>
+
+        <h1>Bienvenidos a nuestro Colegio</h1>
+
+        <p>
+            Educación, tecnología y valores para transformar el futuro.
+        </p>
+
+        <a class="button" href="#colegio">
+            Conoce nuestro colegio
+        </a>
+
+    </div>
+
+</section>
+
+
+<section class="section" id="colegio">
+
+    <h2>Sobre nuestro colegio</h2>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <div class="icon">🎓</div>
+
+            <h3>Educación</h3>
+
+            <p>
+                Formamos estudiantes con conocimientos,
+                habilidades y valores.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">💡</div>
+
+            <h3>Innovación</h3>
+
+            <p>
+                Promovemos el uso responsable de la ciencia
+                y la tecnología.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">❤️</div>
+
+            <h3>Valores</h3>
+
+            <p>
+                Formando Lideres
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="section" id="servicios">
+
+    <h2>Portal Educativo</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">👩‍🏫</div>
+            <h3>Docentes</h3>
+            <p>Acceso para docentes del colegio.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🎓</div>
+            <h3>Estudiantes</h3>
+            <p>Consulta de información académica.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">👨‍👩‍👧</div>
+            <h3>Acudientes</h3>
+            <p>Información relacionada con sus estudiantes.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🔐</div>
+            <h3>Administración</h3>
+            <p>Panel privado para administrar el sistema.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="section" id="contacto">
+
+    <h2>Contacto</h2>
+
+    <p>
+        📍 Dirección del colegio: Carrera 12 N° 21 - 40 B/Sucre
+    </p>
+
+    <p>
+        📞 Teléfono: 3006554638
+    </p>
+
+    <p>
+        ✉️ Correo institucional: colegiogimnasioreal@gmail.com
+    </p>
+
+</section>
+
+
+<footer>
+
+    <p>
+        © 2026 Portal Educativo del Colegio
+    </p>
+
+</footer>
+
+</body>
+</html>
